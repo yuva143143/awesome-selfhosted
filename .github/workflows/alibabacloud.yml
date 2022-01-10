@@ -60,7 +60,7 @@ jobs:
     # 1.2 Buid and push image to ACR   
     - name: Build and push image to ACR  
       run: |
-        docker build . --t registry/namespace/image:tag
+        docker build . -t registry/namespace/image:tag
         docker push registry/namespace/image:tag
  
     # 1.3 Scan image in ACR   
